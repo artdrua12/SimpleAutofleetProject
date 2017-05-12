@@ -1,0 +1,62 @@
+header {
+    background-image: url(../images/10.png);
+    background-size: contain;
+    /*масштабировани фона*/
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-basis: 100%;
+    flex-grow: 1;
+    height: 300px;
+    right: 0px;
+}
+
+div#scrolling {
+    position: absolute;
+    top: 12%;
+    width: 95%;
+    justify-content: space-between;
+    height: 200px;
+    min-width: 700px;
+    margin-left: 2.5%;
+}
+
+article {
+    box-shadow: 0px 0px 41px -4px #181919, 0px 3px 1px 3px #ffff80 inset, 0px 0px 200px -0px rgba(119, 39, 65, 0.8) inset;
+    background: rgba(110, 200, 220, 0.1);
+    border-radius: 17px;
+    flex-basis: 100px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    margin: 0 1% 0 1%;
+    z-index: 1;
+    max-width: 300px;
+}
+
+article:nth-child(4) {
+    display: none;
+}
+
+article:nth-child(5) {
+    display: none;
+}
+
+#left,
+#right {
+    position: absolute;
+    top: 15%;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-top: 57px solid rgba(158, 37, 37, 0);
+    border-bottom: 57px solid transparent;
+}
+
+#left {
+    left: 0px;
+    border-right: 37px solid #ffff80;
+}
+
+#right {
+    right: 0px;
+    border-left: 37px solid #ffff80;
+}
